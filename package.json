@@ -1,0 +1,20 @@
+{
+  "name": "marked-it",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "get-stdin": "^6.0.0",
+    "highlight.js": "^9.12.0",
+    "linebyline": "^1.3.0",
+    "markdown-it": "^8.4.2",
+    "markdown-it-container": "^2.0.0",
+    "markdown-it-emoji": "^1.4.0"
+  }
+}
