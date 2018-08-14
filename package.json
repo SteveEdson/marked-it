@@ -4,7 +4,7 @@
   "description": "Custom processor for Marked2, using marked-it with plugins",
   "main": "index.js",
   "scripts": {
-    "test": "ava tests/",
+    "test": "nyc ava tests/",
     "test-update": "ava tests/ -u",
     "postinstall": "markedpath=$(which markedit); echo \"Use '$markedpath' as the custom processor path under advanced settings\""
   },
@@ -32,6 +32,7 @@
     "markdown-it-emoji": "^1.4.0"
   },
   "devDependencies": {
-    "ava": "1.0.0-beta.7"
+    "ava": "1.0.0-beta.7",
+    "nyc": "^12.0.2"
   }
 }
