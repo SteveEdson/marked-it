@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ava tests/",
+    "test-update": "ava tests/ -u",
     "postinstall": "markedpath=$(which markedit); echo \"Use '$markedpath' as the custom processor path under advanced settings\""
   },
   "bin": {
