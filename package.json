@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin" : {
+    "markedit" : "./index.js",
+    "marked-it" : "./index.js"
+  },
   "keywords": [],
   "author": "Steve Edson <steve@steveedson.co.uk>",
   "license": "MIT",
