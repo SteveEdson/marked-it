@@ -1,6 +1,6 @@
 {
   "name": "marked2-marked-it",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Custom processor for Marked2, using marked-it with plugins",
   "main": "index.js",
   "scripts": {
