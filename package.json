@@ -4,7 +4,7 @@
   "description": "Custom processor for Marked2, using marked-it with plugins",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "ava tests/",
     "postinstall": "markedpath=$(which markedit); echo \"Use '$markedpath' as the custom processor path under advanced settings\""
   },
   "bin": {
@@ -29,5 +29,8 @@
     "markdown-it": "^8.4.2",
     "markdown-it-container": "^2.0.0",
     "markdown-it-emoji": "^1.4.0"
+  },
+  "devDependencies": {
+    "ava": "1.0.0-beta.7"
   }
 }
