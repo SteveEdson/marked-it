@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const getStdin = require('get-stdin');
 const md = require('./renderer/markdown-it');
 

@@ -6,18 +6,25 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin" : {
-    "markedit" : "./index.js",
-    "marked-it" : "./index.js"
+  "bin": {
+    "markedit": "./index.js",
+    "marked-it": "./index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "marked",
+    "marked2",
+    "markdown-it",
+    "markdown",
+    "md",
+    "processor",
+    "custom"
+  ],
   "author": "Steve Edson <steve@steveedson.co.uk>",
   "license": "MIT",
   "repository": "",
   "dependencies": {
     "get-stdin": "^6.0.0",
     "highlight.js": "^9.12.0",
-    "linebyline": "^1.3.0",
     "markdown-it": "^8.4.2",
     "markdown-it-container": "^2.0.0",
     "markdown-it-emoji": "^1.4.0"
