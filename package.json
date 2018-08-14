@@ -1,10 +1,11 @@
 {
-  "name": "marked-it",
+  "name": "marked2-marked-it",
   "version": "1.0.0",
   "description": "Custom processor for Marked2, using marked-it with plugins",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "markedpath=$(which markedit); echo \"Use '$markedpath' as the custom processor path under advanced settings\""
   },
   "bin": {
     "markedit": "./index.js",
@@ -21,7 +22,7 @@
   ],
   "author": "Steve Edson <steve@steveedson.co.uk>",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/SteveEdson/marked-it",
   "dependencies": {
     "get-stdin": "^6.0.0",
     "highlight.js": "^9.12.0",
