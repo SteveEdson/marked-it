@@ -3,5 +3,12 @@ node_js:
   - 10
   - 8
   - 6
-after_success:
-  - npm run semantic-release
+
+deploy:
+  provider: npm
+  email: steve@steveedson.co.uk
+  api_key:
+    secure: g9UQZfsLD+1lOVMB/VcGoaomxZ1BeCVfCo7ne+qcNg4Zwj+NRaOZXlOoB+ND2PDIDv7HBA0B9oZNl3ByVDHFUTm5l/0WatC2eblq0o/r7rd9NT2gRP3lBZ8uxQ/8Uo/9IQPUjBnCk0qKK4uMkzFIgyyrEXJar9/VPe/IEXj0D5tHAdIVt+0m6bxb7u0sGU9pQhsar4GWOvdnJRLeEGp27+Kx5Q2TyS7KZ4wIOyDRTxYK5WxVNr+DaKQ3VRdrbtdv6bLkbu44hAtY6U/apH/z+JSJnpUo5ttUAJfrWYgb8BDHMUTdjbp4Ryri5NSU/5c3utUd2LQFfrKdwxhoFYwlkhyTs2EPnFaYcHIgwxup5CZKnlcnjkFlPoxirL2dslzvjE4nMejioqFaapANWZ4/+q0He7l6VZNGZkDQj7bmtE92TQ9jJ4KOfEwZvx98LSMB09exVQ1SLlIz+TBejpVx+UvI+ToY/gnMFem7hpFTGDu7ugXaUubXIe0V7vcLNkMewGCUh+BBlum2SHzHniQdrm6P6czzwJKt8wzE3axh5bYIxeo8NDHS8NbCYWYCi73KZQzgGj2O5ugfLDtZTYDZVnmVYmyCt4mJR4VOjyEBaBVLeZCoe+A+8SiMnbC1+tOt9JMhQAg8BFi202e1YBs6UXSdxT6u5DsjD5HtoPEPSJI=
+  on:
+    tags: true
+    repo: SteveEdson/marked-it

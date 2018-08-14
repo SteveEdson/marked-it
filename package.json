@@ -6,8 +6,7 @@
   "scripts": {
     "test": "ava tests/",
     "test-update": "ava tests/ -u",
-    "postinstall": "markedpath=$(which markedit); echo \"Use '$markedpath' as the custom processor path under advanced settings\"",
-    "semantic-release": "semantic-release"
+    "postinstall": "markedpath=$(which markedit); echo \"Use '$markedpath' as the custom processor path under advanced settings\""
   },
   "bin": {
     "markedit": "./index.js",
@@ -33,7 +32,6 @@
     "markdown-it-emoji": "^1.4.0"
   },
   "devDependencies": {
-    "ava": "1.0.0-beta.7",
-    "semantic-release": "^15.9.8"
+    "ava": "1.0.0-beta.7"
   }
 }
