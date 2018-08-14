@@ -1,14 +1,15 @@
 {
   "name": "marked-it",
   "version": "1.0.0",
-  "description": "",
+  "description": "Custom processor for Marked2, using marked-it with plugins",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Steve Edson <steve@steveedson.co.uk>",
+  "license": "MIT",
+  "repository": "",
   "dependencies": {
     "get-stdin": "^6.0.0",
     "highlight.js": "^9.12.0",
