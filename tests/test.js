@@ -20,6 +20,24 @@ console.log('hello world', 10, { foo: 'bar', regex: /[A-z]/ });
     t.snapshot(output);
 });
 
+test('Highlighted unsupported output', t => {
+    const input = `\`\`\`fakelang
+console.log('hello world', 10, { foo: 'bar', regex: /[A-z]/ });
+\`\`\``;
+
+    const output = md.render(input);
+    t.snapshot(output);
+});
+
+test('Vue pre container', t => {
+    const input = `::: v-pre
+{{ twigVariable }}
+:::`;
+
+    const output = md.render(input);
+    t.snapshot(output);
+});
+
 test('Mark output', t => {
     const input =
         `An example of ==marked== text`;
