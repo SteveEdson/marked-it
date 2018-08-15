@@ -78,3 +78,21 @@ This is a warning!
     const output = md.render(input);
     t.snapshot(output);
 });
+
+test('Test using header attributes', t => {
+    const input =
+`# Heading {.bold #myHeading}`;
+
+    const output = md.render(input);
+    t.snapshot(output);
+});
+
+test('Checkboxes', t => {
+    const input =
+`- [ ] Item 1
+- [x] Item 2
+- [ ] Item 3`;
+
+    const output = md.render(input);
+    t.snapshot(output);
+});
