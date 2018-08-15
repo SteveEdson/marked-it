@@ -20,6 +20,33 @@ console.log('hello world', 10, { foo: 'bar', regex: /[A-z]/ });
     t.snapshot(output);
 });
 
+test('Mark output', t => {
+    const input =
+        `An example of ==marked== text`;
+
+    const output = md.render(input);
+    t.snapshot(output);
+});
+
+test('Inserted output', t => {
+    const input =
+        `An example of ++inserted++ text`;
+
+    const output = md.render(input);
+    t.snapshot(output);
+});
+
+test('Abbreviated output', t => {
+    const input =
+`*[HTML]: Hyper Text Markup Language
+*[W3C]:  World Wide Web Consortium
+The HTML specification
+is maintained by the W3C.`;
+
+    const output = md.render(input);
+    t.snapshot(output);
+});
+
 test('Emoji output', t => {
     const output = md.render(':beer:');
     t.snapshot(output);

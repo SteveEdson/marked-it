@@ -20,9 +20,14 @@ const md = require('markdown-it')({
     html: true,
     linkify: true,
     typographer: true,
+    breaks: true,
     highlight,
 })
     .use(emoji)
+    .use(require('markdown-it-footnote'))
+    .use(require('markdown-it-abbr'))
+    .use(require('markdown-it-mark'))
+    .use(require('markdown-it-ins'))
     .use(...createContainer('tip', 'TIP'))
     .use(...createContainer('warning', 'WARNING'))
     .use(...createContainer('danger', 'WARNING'))
