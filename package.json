@@ -4,7 +4,7 @@
   "description": "Custom processor for Marked2, using marked-it with plugins",
   "main": "index.js",
   "scripts": {
-    "test": "nyc ava tests/",
+    "test": "nyc ava --update-snapshots tests/",
     "test-update": "ava tests/ -u",
     "postinstall": "markedpath=$(which markedit); echo \"Use '$markedpath' as the custom processor path under advanced settings\""
   },
