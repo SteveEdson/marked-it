@@ -25,7 +25,7 @@
   "license": "MIT",
   "repository": "https://github.com/SteveEdson/marked-it",
   "dependencies": {
-    "highlight.js": "^9.15.6",
+    "highlight.js": "^9.15.8",
     "get-stdin": "^7.0.0",
     "markdown-it": "^9.0.0",
     "markdown-it-abbr": "^1.0.4",
